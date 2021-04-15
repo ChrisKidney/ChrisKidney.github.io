@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+/* Font variables */
+/* Color variables */
+/* Main page header */
+#header-container {
+  margin-top: 25px;
+  margin-bottom: 75px; }
+  #header-container h1 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 50px; }
+  #header-container img {
+    margin-top: 45px;
+    width: 45%; }
+
+/* Main page search area */
+#search-container div {
+  background: #2e2e2e; }
+
+#search-container h5 {
+  margin-top: 25px;
+  margin-left: 25px;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 300; }
+
+#search-container input {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+#search-container button {
+  background: #5bc0de;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px; }
+  #search-container button:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); }
+
+#search-container p {
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px; }
+
+#search-container i {
+  cursor: pointer; }
+
+#search-container .popover {
+  color: black; }
+  #search-container .popover .popover-body {
+    color: white; }
+
+/* Stats page header */
+#stats-header-container {
+  margin-top: 25px;
+  cursor: pointer; }
+  #stats-header-container h1 {
+    margin-top: 3%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 50px; }
+  #stats-header-container h1:hover {
+    color: #5bc0de !important; }
+  #stats-header-container img {
+    width: 50%; }
+  #stats-header-container:hover img {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); }
+
+/* Stats page content */
+#stats-content-container {
+  margin-top: 55px;
+  /* General info / avatar section */
+  /* Tabbed stats display section */ }
+  #stats-content-container .card {
+    background: #2e2e2e; }
+  #stats-content-container .stat {
+    color: #5bc0de; }
+  #stats-content-container #avatar-img {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid white; }
+    #stats-content-container #avatar-img:hover {
+      -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); }
+  #stats-content-container #player-name {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 300; }
+  #stats-content-container #combat-stats, #stats-content-container #match-stats {
+    margin-top: 2%; }
+  #stats-content-container .nav {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: larger; }
+  #stats-content-container .nav-item {
+    color: white; }
+  #stats-content-container .nav-item.active {
+    color: black; }
+  #stats-content-container .nav-item.active:hover {
+    color: #5bc0de; }
+  #stats-content-container .nav-item:hover {
+    color: white; }
+
+/* Animated loading icon */
+#loader-container .loader {
+  margin-top: 25%;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite; }
+
+#loader-container .loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #5bc0de transparent; }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
