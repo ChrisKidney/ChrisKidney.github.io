@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body class="bg-dark">
+    <!-- Main Page -->
     <div class="container-fluid" id="main-page">
         <div class="row">
             <div class="col-lg-12 bg-dark  text-center" id="header-container">
@@ -29,7 +30,7 @@
                 <div class="col-lg-4" id="search-container">
                     <div class="card">
                         <h5 class="text-light">Please enter a Steam ID or Profile URL</h5>
-                        <input type="text" class="form-text-lg text-muted" placeholder="Enter Steam Name, or URL" id="inputBox">
+                        <input type="text" class="form-text-lg text-muted" placeholder="Enter Steam ID, or URL" id="inputBox">
                         <button type="submit" class="btn btn-lg text-light" id='getStats'>Get Stats</button>
                         <p class="text-danger" id="error-txt">Error: Please make sure you've entered a valid Steam ID, Steam Profile URL, or Custom Steam Profile URL and ensure your profile is set to <em>public</em>, hover over the '?' to see how.   
                             <a href="https://support.steampowered.com/kb_article.php?ref=4113-YUDH-6401" target="_blank"><i id="help-popover" class="text-danger far fa-question-circle"></a></i>
@@ -40,11 +41,13 @@
                 </div>
         </div>
     </div>
+    <!-- Loading Page -->
     <div class="container-fluid" id="loading-page">
         <div class="col-lg-12 text-center" id="loader-container">
             <span class="loader"></span>
         </div>
     </div>
+    <!-- Stats Page -->
     <div class="container-fluid" id="stats-page">
         <div class="row" id='stats-header-container'>
             <div class="col-lg-4 bg-dark text-center">
@@ -69,7 +72,6 @@
                             <h3 class="text-light">Total Score:</h3>
                             <h3 class="text-light">Total MVPs:</h3>
                             <h3 class="text-light">Money Earned:</h3>
-                            <!-- TODO rest of general stats-->
                         </div>
                         <div class='col-lg-6'>
                             <h3 class="stat" id="time-played">Placeholder</h3>
@@ -89,6 +91,7 @@
                     </div>
                 </nav>
                   <div class="tab-content" id="nav-tabContent">
+                    <!-- Combat Stats -->
                     <div class="tab-pane fade show active text-light" id="nav-combat" role="tabpanel" aria-labelledby="nav-combat-tab">
                         <div class="row" id="combat-stats">
                             <div class="col-lg-6">
@@ -117,6 +120,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Match Stats -->
                     <div class="tab-pane fade text-light" id="nav-match" role="tabpanel" aria-labelledby="nav-match-tab">
                         <div class="row" id="match-stats">
                             <div class="col-lg-6">
