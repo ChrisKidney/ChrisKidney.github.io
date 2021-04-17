@@ -32,7 +32,7 @@
                         <h5 class="text-light">Please enter a Steam ID or Profile URL</h5>
                         <input type="text" class="form-text-lg text-muted" placeholder="Enter Steam ID, or URL" id="inputBox">
                         <button type="submit" class="btn btn-lg text-light" id='getStats'>Get Stats</button>
-                        <p class="text-danger" id="error-txt">Error: Please make sure you've entered a valid Steam ID, Steam Profile URL, or Custom Steam Profile URL and ensure your profile is set to <em>public</em>, hover over the '?' to see how.   
+                        <p class="text-danger" id="error-txt">Error: Please make sure you've entered a valid Steam ID, Steam Profile URL, or Custom Steam Profile URL and ensure your profile is set to <em>public</em>, hover over tde '?' to see how.   
                             <a href="https://support.steampowered.com/kb_article.php?ref=4113-YUDH-6401" target="_blank"><i id="help-popover" class="text-danger far fa-question-circle"></a></i>
                         </p>
                     </div>
@@ -66,17 +66,35 @@
                         </div>
                     </div>
                     <h2 class="text-light" id="player-name">Placeholder</h2>
-                    <div class='row'>
+                    <div class='row first-row-general'>
                         <div class='col-lg-6'>
                             <h3 class="text-light">Time Played:</h3>
-                            <h3 class="text-light">Total Score:</h3>
-                            <h3 class="text-light">Total MVPs:</h3>
-                            <h3 class="text-light">Money Earned:</h3>
                         </div>
                         <div class='col-lg-6'>
                             <h3 class="stat" id="time-played">Placeholder</h3>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-lg-6'>
+                            <h3 class="text-light">Total Score:</h3>
+                        </div>
+                        <div class='col-lg-6'>
                             <h3 class="stat" id="total-score">Placeholder</h3>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-lg-6'>
+                            <h3 class="text-light">Total MVPs:</h3>
+                        </div>
+                        <div class='col-lg-6'>
                             <h3 class="stat" id="total-mvps">Placeholder</h3>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-lg-6'>
+                            <h3 class="text-light">Money Earned:</h3>
+                        </div>
+                        <div class='col-lg-6'>
                             <h3 class="stat" id="total-money-earned">Placeholder</h3>
                         </div>
                     </div>
@@ -84,7 +102,6 @@
             </div>
             <div class="col-lg-8 bg-dark text-center" id="stats-display">
                 <nav>
-                    
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                       <a class="nav-item nav-link active" id="nav-combat-tab" data-toggle="tab" href="#nav-combat" role="tab" aria-controls="nav-combat" aria-selected="true">Combat</a>
                       <a class="nav-item nav-link" id="nav-match-tab" data-toggle="tab" href="#nav-match" role="tab" aria-controls="nav-match" aria-selected="false">Match</a>
@@ -93,59 +110,67 @@
                   <div class="tab-content" id="nav-tabContent">
                     <!-- Combat Stats -->
                     <div class="tab-pane fade show active text-light" id="nav-combat" role="tabpanel" aria-labelledby="nav-combat-tab">
-                        <div class="row" id="combat-stats">
-                            <div class="col-lg-6">
-                                <h3 class="text-light">Total Kills:</h3>
-                                <h3 class="text-light">Total Deaths:</h3>
-                                <h3 class="text-light">K/D Ratio:</h3>
-                                <h3 class="text-light">Dominations:</h3>
-                                <h3 class="text-light">Total Damage Done:</h3>
-                                <h3 class="text-light">Headshots:</h3>
-                                <h3 class="text-light">Headshot Percentage:</h3>
-                                <h3 class="text-light">Total Shots Fired:</h3>
-                                <h3 class="text-light">Total Shots Hit:</h3>
-                                <h3 class="text-light">Accuracy:</h3>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-group">
+                                    <li class="list-group-item first"><h3 class="text-light">Total Kills:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Total Deaths:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">K/D Ratio:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Dominations:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Total Damage Done:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Headshots:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Headshot Percentage:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Total Shots Fired:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Total Shots Hit:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Accuracy:</h3></li>
+                                </ul>
                             </div>
-                            <div class="col-lg-6">
-                                <h3 class="stat" id="total-kills">Placeholder</h3>
-                                <h3 class="stat" id="total-deaths">Placeholder</h3>
-                                <h3 class="stat" id="kd-ratio">Placeholder</h3>       
-                                <h3 class="stat" id="dominations">Placeholder</h3>  
-                                <h3 class="stat" id="total-dmg-done">Placeholder</h3>
-                                <h3 class="stat" id="headshots">Placeholder</h3>
-                                <h3 class="stat" id="headshot-percentage">Placeholder</h3>
-                                <h3 class="stat" id="shots-fired">Placeholder</h3>
-                                <h3 class="stat" id="shots-hit">Placeholder</h3>
-                                <h3 class="stat" id="accuracy">Placeholder</h3> 
+                            <div class="col">
+                                <ul class="list-group">
+                                    <li class="list-group-item first right"><h3 class="stat" id="total-kills">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-deaths">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="kd-ratio">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="dominations">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-dmg-done">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="headshots">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="headshot-percentage">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="shots-fired">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="shots-hit">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="accuracy">Placeholder</h3></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <!-- Match Stats -->
                     <div class="tab-pane fade text-light" id="nav-match" role="tabpanel" aria-labelledby="nav-match-tab">
-                        <div class="row" id="match-stats">
-                            <div class="col-lg-6">
-                                <h3 class="text-light">Matches Played:</h3>
-                                <h3 class="text-light ">Wins:</h3>
-                                <h3 class="text-light">Losses:</h3>
-                                <h3 class="text-light">Ties:</h3>
-                                <h3 class="text-light">Win/Loss Percentage:</h3>
-                                <h3 class="text-light">Rounds Played:</h3>
-                                <h3 class="text-light">Rounds Won:</h3>
-                                <h3 class="text-light">Rounds Lost:</h3>
-                                <h3 class="text-light">Bombs Planted:</h3>
-                                <h3 class="text-light">Bombs Defused:</h3>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-group">
+                                    <li class="list-group-item first"><h3 class="text-light">Matches Played:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light ">Wins:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Losses:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Ties:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Win/Loss Percentage:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Rounds Played:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Rounds Won:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Rounds Lost:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Bombs Planted:</h3></li>
+                                    <li class="list-group-item"><h3 class="text-light">Bombs Defused:</h3></li>
+                                </ul>
                             </div>
-                            <div class="col-lg-6">
-                                <h3 class="stat" id="matches-played">Placeholder</h3>
-                                <h3 class="stat" id="total-wins">Placeholder</h3>
-                                <h3 class="stat" id="total-losses">Placeholder</h3>
-                                <h3 class="stat" id="total-ties">Placeholder</h3>
-                                <h3 class="stat" id="wl-percentage">Placeholder</h3>
-                                <h3 class="stat" id="total-rounds">Placeholder</h3>
-                                <h3 class="stat" id="rounds-won">Placeholder</h3>
-                                <h3 class="stat" id="rounds-lost">Placeholder</h3>
-                                <h3 class="stat" id="bombs-planted">Placeholder</h3>
-                                <h3 class="stat" id="bombs-defused">Placeholder</h3>
+                            <div class="col">
+                                <ul class="list-group">
+                                    <li class="list-group-item first right"><h3 class="stat" id="matches-played">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-wins">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-losses">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-ties">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="wl-percentage">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="total-rounds">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="rounds-won">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="rounds-lost">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="bombs-planted">Placeholder</h3></li>
+                                    <li class="list-group-item right"><h3 class="stat" id="bombs-defused">Placeholder</h3></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

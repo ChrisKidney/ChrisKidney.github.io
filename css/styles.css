@@ -60,8 +60,6 @@
     font-family: "Poppins", Helvetica, sans-serif;
     font-weight: 100;
     font-size: 50px; }
-  #stats-header-container h1:hover {
-    color: #5bc0de !important; }
   #stats-header-container img {
     width: 50%; }
   #stats-header-container:hover img {
@@ -73,12 +71,15 @@
   /* General info / avatar section */
   /* Tabbed stats display section */ }
   #stats-content-container .card {
-    background: #2e2e2e; }
+    background: #2e2e2e;
+    height: 100%; }
   #stats-content-container .stat {
     color: #5bc0de; }
+  #stats-content-container .first-row-general {
+    margin-top: 8%; }
   #stats-content-container #avatar-img {
     margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
     height: 250px;
     width: 250px;
     border: 1px solid white; }
@@ -87,8 +88,6 @@
   #stats-content-container #player-name {
     font-family: "Poppins", Helvetica, sans-serif;
     font-weight: 300; }
-  #stats-content-container #combat-stats, #stats-content-container #match-stats {
-    margin-top: 2%; }
   #stats-content-container .nav {
     font-family: "Poppins", Helvetica, sans-serif;
     font-weight: 300;
@@ -101,6 +100,16 @@
     color: #5bc0de; }
   #stats-content-container .nav-item:hover {
     color: white; }
+  #stats-content-container .list-group-item {
+    background-color: transparent;
+    border-color: #FFF;
+    width: 103%;
+    margin-right: 1%; }
+    #stats-content-container .list-group-item.first {
+      margin-top: 1%; }
+    #stats-content-container .list-group-item.right {
+      width: 99%;
+      margin-left: 1%; }
 
 /* Animated loading icon */
 #loader-container .loader {
